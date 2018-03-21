@@ -1,0 +1,89 @@
+body {
+  background-color: #44877E
+}
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+header {
+  background-color: #00201B;
+  padding: 5px;
+  color: white;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+}
+button {
+  &.primary {
+    background-color: #00201B;
+    color: white;
+  }
+  &.create {
+    border-radius: 100px;
+    position: absolute;
+    bottom: 50px;
+    right: 25px;
+    z-index: 2;
+    font-size: 2rem;
+  }
+  &.return {
+    border-radius: 100px;
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    z-index: 4;
+    font-size: 2rem;
+  }
+  &.red {
+    background-color: #CF6872;
+    color: white;
+    &.active{
+      background-color: #550109;
+    }
+  }
+  &.deleteBtn {
+    border-radius: 100px;
+    position: absolute;
+    bottom: 50px;
+    left: 25px;
+    z-index: 3;
+    font-size: 2rem;
+  }
+  &.add {
+    margin-top: 25px;
+  }
+}
+.Overview {
+  background-color: white;
+  position: absolute;
+  top: 75px;
+  left: 10px;
+  right: 10px;
+  bottom: 75px;
+  z-index: 1;
+  border-radius: 5px;
+  padding: 10px;
+  &.Create {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.todoList:nth-child(odd) {
+    background-color: #44877E;
+    color: white;
+    border-radius: 2px;
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  font-size: 2rem;
+}
+.deleteLine {
+  color: #A43641;
+}
